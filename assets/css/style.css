@@ -34,16 +34,18 @@ p {
 }
 
 button {
-    padding: .5em 1.5em;
+    padding: .5em 1em;
     margin: 0.5em 0;
     color: #fafafa;
     font-size: 1em;
+    border: none;
 }
 
 /* Navigation */
 
 .nav-link {
     background-color: #3B414D;
+    border: 0.1px solid #b4b4b4;
 }
 
 .nav-link:hover {
