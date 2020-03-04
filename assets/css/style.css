@@ -1,4 +1,4 @@
-/* Core Styling */
+/* Baseline Styling */
 
 body {
     font-family: 'Open Sans', 'Arial', 'Helvetica', 'sans-serif';
@@ -7,4 +7,25 @@ body {
     font-size: .9em;
     line-height: 1.5;
     text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+button {
+    padding: 1em 2em;
+    margin: 0.5em 0;
 }
