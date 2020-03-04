@@ -20,6 +20,10 @@ h1, h2, h3 {
     padding: 1em 0;
 }
 
+h3 {
+    font-size: 1.5em;
+}
+
 p {
     margin: 0;
     padding: 1em 0;
@@ -28,4 +32,32 @@ p {
 button {
     padding: 1em 2em;
     margin: 0.5em 0;
+}
+
+/* Showcase */
+
+#banner {
+    min-height: 450px;
+    color: #fafafa;
+    text-shadow: 1px 1px #313131;
+}
+
+#banner .hero-img {
+    position: absolute;
+    /* background: -webkit-linear-gradient(rgba(29, 38, 113, 0.2), rgba(195, 55, 100, 0.2)), url("../images/andrew-D2YTKKY9U_g-unsplash.jpg"); */
+    /* background: -webkit-linear-gradient(rgba(70, 30, 37, 0.2), rgba(142, 185, 250, 0.2)), url("../images/andrew-D2YTKKY9U_g-unsplash.jpg"); */
+    background: -webkit-linear-gradient(rgba(142, 185, 250, 0.4), rgba(70, 30, 37, 0.2)), url("../images/andrew-D2YTKKY9U_g-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+}
+
+#banner h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 4em;
 }
