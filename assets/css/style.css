@@ -11,6 +11,7 @@ body {
 
 nav {
     background-color: #3B414D;
+    height: 60px;
 }
 
 img {
@@ -53,10 +54,39 @@ button {
     background-color: #3B414D;
     border: 0.1px solid #b4b4b4;
     padding: .5em .5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .nav-link:hover {
     background-color: rgb(94, 103, 121);
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 2fr) 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+}
+
+#nav-1 {
+    grid-column: 2;
+}
+
+#nav-2 {
+    grid-column: 3;
+}
+
+#nav-3 {
+    grid-column: 4;
+}
+
+#nav-4 {
+    grid-column: 5;
+}
+
+#nav-5 {
+    grid-column: 6;
 }
 
 /* Showcase */
@@ -147,6 +177,7 @@ button {
 #btn-B2 {
     background-color: #fafafa;
     color: #434343;
+    margin-right: 50px;
 }
 
 #btn-B2:hover {
@@ -160,29 +191,11 @@ button {
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: auto;
     }
-    .nav-grid {
-        display: grid;
-        grid-template-columns: 1fr repeat(5, 2fr) 1fr;
-        grid-auto-rows: auto;
-        grid-gap: 1em;
-    }
-    #nav-1 {
-        grid-column: 2;
-    }
-    #nav-2 {
-        grid-column: 3;
-    }
-    #nav-3 {
-        grid-column: 4;
-    }
-    #nav-4 {
-        grid-column: 5;
-    }
-    #nav-5 {
-        grid-column: 6;
-    }
     .content-wrapper, #section-a ul, #section-b ul {
         grid-column: 1/5;
+    }
+    .nav-grid {
+        grid-template-columns: 3fr repeat(5, 2fr) 3fr;
     }
     #section-a ul {
         display: flex;
@@ -198,5 +211,23 @@ button {
     }
     #section-b li {
         width: 48%;
+    }
+    #section-a h3 {
+        text-align: left;
+    }
+    #card-B2 {
+        text-align: right;
+    }
+    #card-B2 h3 {
+        text-align: center;
+    }
+    .card p {
+        text-align: left;
+    }
+}
+
+@media(min-width:900px) {
+    .nav-grid {
+        grid-template-columns: 3fr repeat(5, 1fr) 3fr;
     }
 }
