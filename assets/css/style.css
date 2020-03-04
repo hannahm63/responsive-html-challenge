@@ -1,0 +1,10 @@
+/* Core Styling */
+
+body {
+    font-family: 'Open Sans', 'Arial', 'Helvetica', 'sans-serif';
+    background-color: #fafafa;
+    color: #434343;
+    font-size: .9em;
+    line-height: 1.5;
+    text-align: center;
+}
